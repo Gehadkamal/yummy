@@ -1,0 +1,281 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* font-family: 'Playfair Display', serif; */
+	font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+	background-color: #000000f2;
+
+}
+
+/* header side-nav-bar */
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	background-color: #000;
+
+}
+
+.sidenav a {
+	padding: 15px 8px 20px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	transition: 0.3s;
+	color: white;
+}
+
+.social-item {
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+}
+
+.social-item i {
+	color: #f9f6f6;
+	padding-left: 15px;
+	font-size: 14px;
+
+}
+
+.social-item span {
+	color: #999;
+}
+
+#main {
+	height: 100%;
+	width: 60px;
+	position: fixed;
+	z-index: 555555;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+	/* padding-top: 60px; */
+	background-color: white !important;
+	text-align: center;
+}
+
+#main img {
+	height: 48px;
+
+
+}
+
+.menu-img {
+	padding: 25px 0;
+
+}
+
+#main .menu-btn {
+	font-size: 30px;
+	cursor: pointer;
+	margin-top: 50px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu-icon {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 11;
+}
+
+
+/* search */
+
+.search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.9);
+	transform: translateX(100%);
+	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+	z-index: 9999999999999999999999;
+}
+
+.search .search-input {
+	/* padding-left: 1000px; */
+	text-align: center;
+	position: absolute;
+	top: 300%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-bottom: 2px solid #ddd;
+	width: 400px;
+	outline: none;
+	padding: 14px;
+	background-color: transparent;
+}
+
+::placeholder {
+	font-weight: 400;
+	font-size: 17px;
+	text-align: center;
+
+}
+
+.nav-item a {
+	cursor: pointer;
+}
+
+/* search */
+.form-control {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, .7);
+	border-radius: 0;
+	color: #fff;
+	font-weight: 800;
+	margin: 5px;
+}
+
+.form-control:focus {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, .7);
+	border-radius: 0;
+}
+
+@media (max-width:580px) {
+	.myM {
+		padding-left: 3.8rem !important;
+
+	}
+}
+.d-flex{
+	flex-wrap: wrap;
+}
+.search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.9);
+	transform: translateX(100%);
+	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+	z-index: 99999999999;
+}
+
+.search .search-input {
+	position: absolute;
+	top: 300%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-bottom: 2px solid #ddd;
+	width: 400px;
+	outline: none;
+	padding: 14px;
+	background-color: transparent;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+	.w-75 {
+		width: 100% !important;
+
+	}
+
+	.mmm {
+		left: 0;
+	}
+}
+
+/* layer of paragraph  */
+.layer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(255, 255, 255, .7);
+	text-align: center;
+	color: #000;
+	font-weight: 800;
+	transition: all 1s;
+}
+
+.movie {
+	overflow: hidden;
+}
+
+.movie:hover .layer {
+	top: 0;
+	transition: all 1s;
+}
+
+/* border of recipes */
+#recipes li {
+	border: 1px solid #c3e6cb;
+	text-align: center;
+	background-color: #d4edda;
+	color: #155724;
+	list-style-type: none;
+
+}
+#tags li {
+	border: 1px solid #f5c6cb;
+	list-style-type: none;
+	color: #721c24;
+    background-color: #f8d7da;
+    /* border-color: #f5c6cb; */
+}
+
+.ms-5{
+	margin-left: 250px !important;
+}
+
+.sm-loading {
+	z-index: 999;
+	inset: 0;
+	background-color: #0D0D0D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 100vh;
+}
+
+/* #tags{
+  text-align: center;
+}
+
+.mx-1{
+	margin-left: 100px;
+} */
+.myM h3 {
+text-align: left;
+padding-left:15px !important ;
+}
+.myM p {
+	text-align: left;
+	padding-left:15px !important ;
+
+}
+@media (max-width:580px)
+{
+		.myM 
+	{
+		padding-left: 3.8rem!important;
+
+	}
+}
